@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jcalzado.lab5_1_multimedia.MainActivity"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLeft">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/piano"
+            android:id="@+id/imgPiano"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickPiano"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/guitarra_electrica"
+            android:id="@+id/imgGuitarra"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickGuitarra"/>
+
+        <ImageView
+            app:srcCompat="@mipmap/arpa"
+            android:id="@+id/imgArpa"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickArpa" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:id="@+id/linearRight">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/trompeta"
+            android:id="@+id/imgTrompeta"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickTrompeta"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/timbal"
+            android:id="@+id/imgTimbal"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickTimbal"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/tambor"
+            android:id="@+id/imgTambor"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickTambor"/>
+    </LinearLayout>
+</LinearLayout>
